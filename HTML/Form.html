@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+   
+</head>
+
+<style>
+    table {
+        margin: auto;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    caption {
+        caption-side: top;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    form {
+        margin: auto;
+        padding: 20px;
+        border: 1px solid black;
+        width: 50%;
+        margin-top: 20px;
+    }
+    input, select {
+        margin: 10px ;
+        padding: 5px;
+        width: 80%;
+    }
+    .form-table {
+        width: 100%;
+        background-color:lightgray;
+    }
+    .form-table td {
+        text-align: left;
+        padding: 5px;
+    }
+    .form-heading {
+        text-align:center;
+        font-weight: bold;
+
+    }
+
+    .body {
+        background-color: silver;
+    }
+
+    .alignment {
+        text-align: left;    
+
+    }
+    <style>
+    /* Add or modify existing styles as needed */
+
+    .button-container {
+        display: flex;
+        justify-content: space-between; /* Adjust this based on your spacing needs */
+        margin-top: 20px; /* Adjust margin as needed */
+    }
+
+    .button1, .button2 {
+        width: 20vh;
+        height: 40px;
+        color: black;
+        font-size: 16px; /* Adjust font size as needed */
+        border: none;
+        cursor: pointer;
+    }
+
+    .button1 {
+        background-color: chartreuse;
+    }
+
+    .button2 {
+        background-color: red;
+    }
+
+
+   
+</style>
+
+<body>
+    
+    <form name="Registration form" method="get" action="https://example.com/submit-form" enctype="multipart/form-data">
+        <h2 class="form-heading">Registration Form</h2>
+        <table class="form-table">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td class="alignment">
+                    <input type="radio" value="male" name="gender"> Male
+                    <input type="radio" value="female" name="gender"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Technologies</td>
+                <td>
+                    <input type="checkbox" value="java" name="tech">java
+                    <input type="checkbox" value="Mysql" name="tech">Mysql
+                    <input type="checkbox" value="Python" name="tech">Python
+                </td>
+
+            </tr>
+        
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="ctry">
+                        <option>Select</option>
+                        <option value="ind">INDIA</option>
+                        <option value="uk">UNITED KINGDOM</option>
+                        <option value="rsa">SOUTH AFRiCA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Joining Date</td>
+                <td>
+                    <input type="date"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Joining Time</td>
+                <td>
+                    <input type="time"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Telephone</td>
+                <td>
+                    <input type="tel"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Profile Picture</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+
+
+        </table>
+        <div class="button-container">
+            <button class="button2 ">Cancel</button>
+            <button class="button1">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
